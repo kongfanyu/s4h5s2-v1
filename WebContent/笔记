@@ -1,0 +1,17 @@
+1. 在web环境下使用spring
+2. 在页面访问Spring容器管理的bean的时候，
+bean应该已经完成初始化，读取过applicationContext.xml文件
+3.服务器启动，加载web应用程序，应该完成spring容器初始化
+---3.1 Servlet  ---springmvc
+---3.2 监听器 ---request session application
+---3.3 ServletConextListener
+
+4. 几个概念
+ApplicationContext  Spring的API
+ServletContext  (application)  Servlet API 
+
+5. 服务器启动-----监听器---contextInitialized----
+加载spring容器-----application(作用域)----jsp使用容器-----
+获取容器----application.get-----ApplicationContext----getBean
+
+6.使用Spring自身的监听器
